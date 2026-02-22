@@ -24,16 +24,21 @@ internal class Program
         //Recursion.PrintNto1_TailRecusrion(4);
         //Console.WriteLine();
         //Recursion.PrintNto1_HeadRecusrion(4,4);
-        Console.WriteLine(Recursion.SumofNNaturalNumber(3));
+        //Console.WriteLine(Recursion.SumofNNaturalNumber(3));
 
-        Console.WriteLine($"Factorial of 5: {Recursion.Factorial(5)}");
+        //Console.WriteLine($"Factorial of 5: {Recursion.Factorial(5)}");
 
-        int[] arr = { 1, 2, 3, 4, 5 };
-        Console.WriteLine("Before Reverse: ");
-        Console.WriteLine(string.Join(",", arr));
-        Recursion.ReverseArray(arr, 0, arr.Length - 1);
-        Console.WriteLine("After Reverse: ");
-        Console.Write(String.Join(",", arr));
+        //int[] arr = { 1, 2, 3, 4, 5 };
+        //Console.WriteLine("Before Reverse: ");
+        //Console.WriteLine(string.Join(",", arr));
+        //Recursion.ReverseArray(arr, 0, arr.Length - 1);
+        //Console.WriteLine("After Reverse: ");
+        //Console.Write(String.Join(",", arr));
+
+        //Hashing.BasicDictionary();
+        int[] arr1= { 10, 5, 10, 15, 10, 5 };
+        Hashing.FrequencyOfEachElement(arr1);
+        Hashing.HighestLowest(arr1);
     }
 
 
