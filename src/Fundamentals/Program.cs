@@ -36,13 +36,17 @@ internal class Program
         //Console.Write(String.Join(",", arr));
 
         //Hashing.BasicDictionary();
-        int[] arr1= { 8,6,3,2,5,4 };
+        int[] arr= { 8,6,3,2,5,4 };
         //Hashing.FrequencyOfEachElement(arr1);
         //Hashing.HighestLowest(arr1);
 
         //Sorting.BubbleSort(arr1);
         //Sorting.InsertionSort(arr1);
-        Sorting.SelectionSort(arr1);
+        //Sorting.SelectionSort(arr);
+        int[] arr1 = { 10, 12, 15 };
+        int[] arr2 = { 10, 15, 18, 20 };
+
+        Sorting.MergeSortedArray(arr1, arr2);
     }
 
 

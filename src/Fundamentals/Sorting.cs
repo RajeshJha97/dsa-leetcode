@@ -2,6 +2,45 @@
 
 internal static class Sorting
 {
+    public static void MergeSortedArray(int[] arr1, int[] arr2)
+    {
+        int[] aux = new int[arr1.Length + arr2.Length];
+
+        for (int i = 0; i < aux.Length; i++)
+        {
+            int j = 0;
+            int k = 0;
+
+            while (j < arr1.Length && k < arr2.Length)
+            {
+                if (arr1[j] < arr2[k])
+                {
+                    aux[i] = arr1[j];
+                    j++;
+                    i++;
+                }
+                else
+                {
+                    aux[i] = arr2[k];
+                    k++;
+                    i++;
+                }
+            }
+
+            for (; j < arr1.Length; j++)
+            {
+                aux[i] = arr1[j];
+                i++;
+            }
+            for (; k < arr2.Length; k++)
+            {
+                aux[i] = arr2[k];
+                i++;
+            }
+        }
+
+        Console.WriteLine(String.Join(",",aux));
+    }
     internal static void SelectionSort(int[] arr)
     {
         Console.WriteLine($"Before Sorting: {String.Join(",", arr)}");
