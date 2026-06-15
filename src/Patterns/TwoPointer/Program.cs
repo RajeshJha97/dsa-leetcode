@@ -4,6 +4,10 @@ internal class Program
 {
     static void Main(string[] args)
     {
-        MergeTwoArray.Merge();
+        //MergeTwoArray.Merge();
+        //MoveZeroes.MoveZeroesToLeft();
+        //MoveZeroes.MoveZeroesToRight();
+
+        RemoveDuplicates.Remove();
     }
 }

@@ -1,6 +1,4 @@
-﻿using System.Runtime.CompilerServices;
-
-namespace TwoPointer;
+﻿namespace TwoPointer;
 
 internal static class MergeTwoArray
 {
