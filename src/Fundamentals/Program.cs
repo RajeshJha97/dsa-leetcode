@@ -46,7 +46,16 @@ internal class Program
         int[] arr1 = { 10, 12, 15 };
         int[] arr2 = { 10, 15, 18, 20 };
 
-        Sorting.MergeSortedArray(arr1, arr2);
+        //Sorting.MergeSortedArray(arr1, arr2);
+
+        CustomLinkedList l1=new CustomLinkedList();
+        l1.AddLast(10);
+        l1.AddLast(20);
+        l1.AddLast(30);
+        l1.AddLast(40);
+        l1.AddLast(50);
+
+        l1.Display();
     }
 
 
