@@ -4,7 +4,7 @@ internal class Program
 {
     private static void Main(string[] args)
     {
-        Console.ForegroundColor = ConsoleColor.DarkMagenta;
+        //Console.ForegroundColor = ConsoleColor.DarkMagenta;
         //int number = 414;        
         //Console.WriteLine(Maths.CountDigitsInANumber(-4589));
 
@@ -36,7 +36,7 @@ internal class Program
         //Console.Write(String.Join(",", arr));
 
         //Hashing.BasicDictionary();
-        int[] arr= { 8,6,3,2,5,4 };
+        int[] arr = { 8, 6, 3, 2, 5, 4 };
         //Hashing.FrequencyOfEachElement(arr1);
         //Hashing.HighestLowest(arr1);
 
@@ -48,13 +48,28 @@ internal class Program
 
         //Sorting.MergeSortedArray(arr1, arr2);
 
-        CustomLinkedList l1=new CustomLinkedList();
-        l1.AddLast(10);
-        l1.AddLast(20);
-        l1.AddLast(30);
+        CustomLinkedList l1 = new CustomLinkedList();
+        //l1.AddLast(10);
+        //l1.AddLast(20);
+        //l1.AddLast(30);
+        //l1.AddLast(40);
+        //l1.AddLast(50);
+
+        l1.AddFirst(10);
+        l1.AddFirst(20);
+        l1.AddFirst(30);
         l1.AddLast(40);
         l1.AddLast(50);
+        l1.AddFirst(60);
+        l1.AddAny(70, 3);
+        l1.Display();
 
+        Console.WriteLine("Rmoving First: ");
+        l1.RemoveFirst();
+        l1.Display();
+
+        Console.WriteLine("Rmoving Any: ");
+        l1.RemoveAny(2);
         l1.Display();
     }
 
