@@ -1,9 +1,31 @@
-﻿using Fundamentals;
+﻿using Fundamentals.LinkedList;
 
 internal class Program
 {
     private static void Main(string[] args)
     {
+
+        Doubly dl= new Doubly();
+        dl.AddFirst(10);
+        dl.AddFirst(20);
+        dl.AddFirst(30);
+        dl.AddAny(170, 1);
+        dl.AddLast(40);
+        dl.AddLast(70);
+        dl.AddAny(120,2);
+        dl.AddAny(120, 12);
+        dl.Display();
+
+        //Circular cl=new Circular();
+        //cl.AddLast(10);
+        //cl.AddLast(20);
+        //cl.AddLast(30);
+        //cl.AddLast(40);
+        //cl.AddLast(50);
+        //cl.AddFirst(60);
+        //cl.AddFirst(70);
+        //cl.AddAny(90,4);
+        //cl.Display();
         //Console.ForegroundColor = ConsoleColor.DarkMagenta;
         //int number = 414;        
         //Console.WriteLine(Maths.CountDigitsInANumber(-4589));
@@ -48,29 +70,29 @@ internal class Program
 
         //Sorting.MergeSortedArray(arr1, arr2);
 
-        CustomLinkedList l1 = new CustomLinkedList();
+        //CustomLinkedList l1 = new CustomLinkedList();
         //l1.AddLast(10);
         //l1.AddLast(20);
         //l1.AddLast(30);
         //l1.AddLast(40);
         //l1.AddLast(50);
 
-        l1.AddFirst(10);
-        l1.AddFirst(20);
-        l1.AddFirst(30);
-        l1.AddLast(40);
-        l1.AddLast(50);
-        l1.AddFirst(60);
-        l1.AddAny(70, 3);
-        l1.Display();
+        //l1.AddFirst(10);
+        //l1.AddFirst(20);
+        //l1.AddFirst(30);
+        //l1.AddLast(40);
+        //l1.AddLast(50);
+        //l1.AddFirst(60);
+        //l1.AddAny(70, 3);
+        //l1.Display();
 
-        Console.WriteLine("Rmoving First: ");
-        l1.RemoveFirst();
-        l1.Display();
+        //Console.WriteLine("Rmoving First: ");
+        //l1.RemoveFirst();
+        //l1.Display();
 
-        Console.WriteLine("Rmoving Any: ");
-        l1.RemoveAny(2);
-        l1.Display();
+        //Console.WriteLine("Rmoving Any: ");
+        //l1.RemoveAny(2);
+        //l1.Display();
     }
 
 

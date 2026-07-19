@@ -1,12 +1,14 @@
-﻿namespace Fundamentals;
+﻿using Fundamentals.LinkedList.Nodes;
 
-internal class CustomLinkedList
+namespace Fundamentals.LinkedList;
+
+internal class Singly
 {
     public Node? Head;
     public Node? Tail;
     public int Size;
 
-    public CustomLinkedList()
+    public Singly()
     {
         Head = null;
         Tail = null;
@@ -45,9 +47,9 @@ internal class CustomLinkedList
         Node newest = new Node(data,null!);
 
         if (IsEmpty())
-        {
-            Head = newest;
+        {   Head = newest;
             Tail = newest;
+         
         }
         else
         {
@@ -152,17 +154,5 @@ internal class CustomLinkedList
             p = p.Next;
         }
         Console.WriteLine();
-    }
-}
-
-internal class Node
-{
-    public int Data;
-    public Node Next;
-
-    public Node(int data,Node next)
-    {
-        Data = data;
-        Next = next;
     }
 }
